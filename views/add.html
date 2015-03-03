@@ -8,15 +8,15 @@
   <div class="row">
     <div class="col-md-3">
 
-      <form>
+      <form action="/add/submit" method="POST">
         <div class="form-group">
           <label for="PageTitle">PAGE TITLE</label>
-          <input type="title" class="form-control" id="PageTitle">
+          <input name="title" type="title" class="form-control" id="PageTitle">
         </div>
 
         <div class="form-group">
           <label for="PageContent">PAGE CONTENT</label>
-          <textarea class="form-control" rows="13"></textarea>
+          <textarea name="body" class="form-control" rows="13"></textarea>
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
