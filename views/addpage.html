@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+  
+  <div class="page-header">
+    <h3>ADD A PAGE</h3>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+
+      <form>
+        <div class="form-group">
+          <label for="PageTitle">PAGE TITLE</label>
+          <input type="title" class="form-control" id="PageTitle">
+        </div>
+
+        <div class="form-group">
+          <label for="PageContent">PAGE CONTENT</label>
+          <textarea class="form-control" rows="13"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+    </div>
+  </div>
+    
+{% endblock %}
