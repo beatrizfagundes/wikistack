@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+
+	{% if doc.title != undefined && doc.title != "" %}
+  		<div class="page-header">
+    		<h3>{{ doc.title | upper }}</h3>
+  		</div>
+  	{% else %}
+  		<div class="page-header">
+    		<h3>{{ "Page" + doc.url_name }}</h3>
+  		</div>
+  	{% endif %}
+
+  	<div class="row">
+    	<div class="col-md-3">
+    		<pre>{{ doc.body }}</pre>
+    	</div>
+  	</div>
+    
+{% endblock %}

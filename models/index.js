@@ -16,7 +16,7 @@ var pageSchema = new Schema({
 });
 
 pageSchema.virtual('full_route').get(function () {
-	return '/wiki/' + pageSchema.url_name;
+	return '/wiki/' + this.url_name;
 });
 
 var userSchema = new Schema({
